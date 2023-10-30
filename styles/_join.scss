@@ -1,0 +1,49 @@
+.join {
+  position: relative;
+  background-image: url(../images/background/Vector1.png), url(../images/background/Vector2.png), url(../images/background/Vector3.png), url(../images/background/Group5.png), url(../images/background/Group4.png), url(../images/background/Vector6.png);
+  background-repeat: no-repeat;
+  font-weight: 700;
+  background-position: 0 0, 50% 70%, 70% 0, 100% 100%, 107% 20%, 60% 65%;
+
+  &__title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    background: $button-color;
+    border-radius: 5px;
+    padding: 20px 80px;
+    margin-bottom: 210px;
+  }
+
+  &__slider {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__slide {
+    width: 16px;
+    height: 16px;
+    border: 1px solid $primary-text-color-opa;
+    border-radius: 50%;
+  }
+
+  &__go {
+    position: absolute;
+    font-size: 14px;
+    line-height: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.active {
+  background: $active-slide;
+}
