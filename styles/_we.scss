@@ -73,7 +73,13 @@
   &__photo-list {
     position: relative;
     display: flex;
-    gap: 14px;
+    justify-content: space-between;
+
+    @include small-screen {
+      & :nth-child(4) {
+        display: none;
+      }
+    }
   }
 
   &__start {

@@ -90,6 +90,11 @@ h3 {
   gap: 100px;
   font-weight: 600;
 }
+@media (max-width: 1710px) {
+  .nav__list {
+    gap: 50px;
+  }
+}
 .nav__item {
   position: relative;
 }
@@ -311,7 +316,12 @@ h3 {
 .we__photo-list {
   position: relative;
   display: flex;
-  gap: 14px;
+  justify-content: space-between;
+}
+@media (max-width: 1710px) {
+  .we__photo-list :nth-child(4) {
+    display: none;
+  }
 }
 .we__start {
   position: absolute;
