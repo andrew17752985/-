@@ -3,6 +3,7 @@
   background-image: url(../images/background/Vector1.png), url(../images/background/Vector2.png), url(../images/background/Vector3.png), url(../images/background/Group5.png), url(../images/background/Group4.png), url(../images/background/Vector6.png);
   background-repeat: no-repeat;
   font-weight: 700;
+  margin-bottom: 150px;
   background-position: 0 0, 50% 70%, 70% 0, 100% 100%, 107% 20%, 60% 65%;
 
   &__title {
@@ -17,10 +18,37 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
     background: $button-color;
     border-radius: 5px;
     padding: 20px 80px;
     margin-bottom: 210px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    & span {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    & .arrow {
+      position: absolute;
+      right: 70px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateX(0)
+    }
+
+    &:hover .arrow {
+      opacity: 1;
+      transform: translateX(10px)
+    }
+
+    &:hover span {
+      transform: translateX(-10px);
+    }
   }
 
   &__slider {

@@ -56,6 +56,13 @@ html {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 125%;
+  margin-bottom: 50px;
+}
+
 .nav {
   display: flex;
   padding: 25px 75px;
@@ -124,6 +131,7 @@ html {
   background-image: url(../images/background/Vector1.png), url(../images/background/Vector2.png), url(../images/background/Vector3.png), url(../images/background/Group5.png), url(../images/background/Group4.png), url(../images/background/Vector6.png);
   background-repeat: no-repeat;
   font-weight: 700;
+  margin-bottom: 150px;
   background-position: 0 0, 50% 70%, 70% 0, 100% 100%, 107% 20%, 60% 65%;
 }
 .join__title {
@@ -136,10 +144,33 @@ html {
   margin-bottom: 40px;
 }
 .join__button {
+  display: flex;
+  align-items: center;
   background: linear-gradient(134deg, #FFDF00 -7.01%, #FFB800 109.07%);
   border-radius: 5px;
   padding: 20px 80px;
   margin-bottom: 210px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.join__button span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.join__button .arrow {
+  position: absolute;
+  right: 70px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(0);
+}
+.join__button:hover .arrow {
+  opacity: 1;
+  transform: translateX(10px);
+}
+.join__button:hover span {
+  transform: translateX(-10px);
 }
 .join__slider {
   display: flex;
@@ -165,4 +196,15 @@ html {
 
 .active {
   background: #FFD00E;
+}
+
+.audit__info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.audit__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */

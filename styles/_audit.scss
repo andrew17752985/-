@@ -1,0 +1,14 @@
+.audit {
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
