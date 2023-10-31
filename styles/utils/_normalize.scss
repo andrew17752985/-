@@ -1,7 +1,7 @@
 .container {
   max-width: 1920px;
   margin: auto;
-  padding: 75px;
+  padding: 50px 75px;
 }
 
 html {
@@ -17,9 +17,21 @@ html {
   box-sizing: border-box;
 }
 
+h2,h3,h4 {
+  line-height: 125%;
+}
+
 h2 {
   font-size: 44px;
   font-weight: 800;
-  line-height: 125%;
   margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.back {
+  background: $button-color;
 }

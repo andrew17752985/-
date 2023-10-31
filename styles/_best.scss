@@ -1,0 +1,18 @@
+.best {
+  background: url(../images/best/best/Group.png) no-repeat right center;
+  margin: 50px 0;
+  
+  &__paragraph {
+    max-width: 870px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 28px;
+  }
+
+  &__logos {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+  }
+}
