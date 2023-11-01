@@ -1,0 +1,41 @@
+.employees {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+    cursor: pointer;
+  }
+
+  &__item-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px 12px;
+    cursor: pointer;
+  }
+
+  &__item-button-prew {
+    left: -28px;
+  }
+
+  &__item-button-next {
+    right: -28px;
+  }
+
+  &__link-button {
+    display: block;
+    width: 34px;
+    height: 23px;
+  }
+}
+
+.button-active {
+  background: $active-button;
+}

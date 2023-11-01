@@ -1,0 +1,48 @@
+.drupal {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px 30px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      flex-shrink: 0;
+      right: -25%;
+      top: 50%;
+      width: 266px;
+      height: 266px;
+      border-radius: 50%;
+      background: $button-color;
+      opacity: 0.1;
+      transform-origin: 50% 45%;
+      transform: scale(1) translateY(-50%);
+      transition: transform 0.6s ease;
+    }
+
+    &:hover::before {
+      transform: scale(5);
+    }
+  }
+
+  &__card img {
+    height: 46px;
+    margin-right: auto;
+  }
+
+  &__card p {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
