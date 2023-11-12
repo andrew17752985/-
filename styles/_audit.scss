@@ -1,4 +1,5 @@
 .audit {
+  position: relative;
 
   &__info {
     display: flex;
@@ -22,5 +23,12 @@
       height: 150px;
       background: $active-slide;
     }
+  }
+
+  &__blot {
+    position: absolute;
+    margin-left: -75px;
+    top: 50%;
+    z-index: -1;
   }
 }

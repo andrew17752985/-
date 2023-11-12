@@ -54,6 +54,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all .6s ease;
+    background-color: #fff;
 
     & img {
       max-width: 80px;
@@ -72,4 +73,11 @@
     }
   }
 
+  &__blot {
+    position: absolute;
+    margin-right: -75px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
 }

@@ -26,9 +26,11 @@
   }
 
   &__contacts {
+    font-size: 24px;
     display: flex;
     padding: 50px 105px 0 120px;
     color: #fff;
+    
   }
 
   &__communication {
@@ -42,6 +44,10 @@
   &__socials {
     display: flex;
     gap: 45px;
+
+    & a{
+      display: block;
+    }
   }
 
   &__adres {
@@ -50,6 +56,10 @@
     gap: 20px;
     max-width: 293px;
     margin-right: 139px;
+    
+    & a {
+      white-space: nowrap;
+    }
   }
 
   &__title {
@@ -58,14 +68,32 @@
     font-size: 24px;
   }
 
-  &__title--last {
-    margin-bottom: 30px;
+  &__startup {
+    & a:nth-of-type(1) {
+      margin-right: 25px;
+    }
+
+    & a {
+      display: inline-block;
+    }
   }
 
-  &__startup {
-    & a {
-       margin-right: 44px;
+  &__tel {
+    white-space: nowrap;
+  }
+
+  &__gps {
+    font-size: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 210px;
+      height: 1px;
+      bottom: 3px;
+      right: 35px;
+      background-color: #DCDCDC;
     }
-   
   }
 }

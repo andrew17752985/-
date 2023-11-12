@@ -1,6 +1,7 @@
 .we {
   font-size: 16px;
   line-height: 125%;
+  position: relative;
 
   &__list {
     position: relative;
@@ -95,5 +96,13 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+  }
+
+  &__blot {
+    position: absolute;
+    right: 0;
+    margin-right: -75px;
+    bottom: 0;
+    z-index: -1;
   }
 }
