@@ -1,5 +1,5 @@
 .container {
-  max-width: 1920px;
+  max-width: 100wh;
   margin: auto;
   padding: 50px 75px;
 }
@@ -17,7 +17,7 @@ html {
   box-sizing: border-box;
 }
 
-h2,h3,h4,h5 {
+h2,h3,h4,h5,h6 {
   line-height: 125%;
 }
 
@@ -27,7 +27,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-h3 {
+h3,h6 {
   font-size: 26px;
   font-weight: 700;
 }

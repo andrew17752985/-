@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
 }
 
@@ -38,7 +39,7 @@ textarea {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 100wh;
   margin: auto;
   padding: 50px 75px;
 }
@@ -56,7 +57,7 @@ html {
   box-sizing: border-box;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
   line-height: 125%;
 }
 
@@ -66,7 +67,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-h3 {
+h3, h6 {
   font-size: 26px;
   font-weight: 700;
 }
@@ -345,6 +346,7 @@ h5 {
 .drupal__list {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   align-items: first baseline;
 }
 .drupal__card {
@@ -370,7 +372,7 @@ h5 {
   opacity: 0.1;
   transform-origin: 50% 45%;
   transform: scale(1) translateY(-50%);
-  transition: transform 0.6s ease;
+  transition: transform 0.3s ease;
 }
 .drupal__card:hover::before {
   transform: scale(5);
@@ -417,4 +419,128 @@ h5 {
 
 .button-active {
   background: #FFE30B;
+}
+
+.charity {
+  position: relative;
+}
+.charity__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 250px;
+}
+.charity__text {
+  max-width: 750px;
+}
+.charity__imgs {
+  position: relative;
+}
+.charity__img-0 {
+  position: absolute;
+  right: 0;
+  top: -104px;
+}
+.charity__img-1 {
+  position: absolute;
+  right: 464px;
+}
+.charity__img-2 {
+  position: absolute;
+  right: 103px;
+  top: 112px;
+}
+.charity__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  row-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: last baseline;
+}
+.charity__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 40px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.charity__item img {
+  max-width: 80px;
+  margin: auto;
+}
+.charity__item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  max-width: 522px;
+}
+.charity__item:hover {
+  background: #FFD00E;
+}
+
+.footer {
+  background-image: url(../images/footer/Rectangle\ 421.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+.footer__for-us {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  padding: 50px 30px 55px 75px;
+  background: #FFD00E;
+  max-width: 525px;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 32px;
+}
+.footer__info {
+  margin-bottom: 70px;
+}
+.footer__contacts {
+  display: flex;
+  padding: 50px 105px 0 120px;
+  color: #fff;
+}
+.footer__communication {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 260px;
+  margin-right: 146px;
+}
+.footer__socials {
+  display: flex;
+  gap: 45px;
+}
+.footer__adres {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 293px;
+  margin-right: 139px;
+}
+.footer__title {
+  white-space: nowrap;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.footer__title--last {
+  margin-bottom: 30px;
+}
+.footer__startup a {
+  margin-right: 44px;
 }/*# sourceMappingURL=main.css.map */

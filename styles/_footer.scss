@@ -1,0 +1,71 @@
+.footer {
+  background-image: url(../images/footer/Rectangle\ 421.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+  display: flex;
+  margin: auto;
+  width: 100%;
+
+  &__for-us {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+    padding: 50px 30px 55px 75px;
+    background: $active-slide;
+    max-width: 525px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    margin-bottom: 70px;
+  }
+
+  &__contacts {
+    display: flex;
+    padding: 50px 105px 0 120px;
+    color: #fff;
+  }
+
+  &__communication {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 260px;
+    margin-right: 146px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 45px;
+  }
+
+  &__adres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 293px;
+    margin-right: 139px;
+  }
+
+  &__title {
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  &__title--last {
+    margin-bottom: 30px;
+  }
+
+  &__startup {
+    & a {
+       margin-right: 44px;
+    }
+   
+  }
+}

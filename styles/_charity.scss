@@ -1,0 +1,75 @@
+.charity {
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px;
+  }
+
+  &__text {
+    max-width: 750px;
+  }
+
+  &__imgs { 
+    position: relative;
+  }
+
+  &__img-0 {
+    position: absolute;
+    right: 0;
+    top: -104px;
+  }
+
+  &__img-1 {
+    position: absolute;
+    right: 464px;
+  }
+
+  &__img-2 {
+    position: absolute;
+    right: 103px;
+    top: 112px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+    row-gap: 30px;
+    column-gap: 30px;
+    align-items: last baseline;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 40px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .6s ease;
+
+    & img {
+      max-width: 80px;
+      margin: auto;
+    }
+
+    & p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 125%;
+      max-width: 522px;
+    }
+
+    &:hover {
+      background: $active-slide;
+    }
+  }
+
+}
